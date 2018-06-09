@@ -21,9 +21,16 @@
 # See https://ddnexus.github.io/pagy/extras/i18n
 # require 'pagy/extras/i18n'
 
+# Items: Handle the page :items passed with the params
+# See https://ddnexus.github.io/pagy/extras/items
+# require 'pagy/extras/items'
+# Pagy::VARS[:items_param] = :items    # default
+# Pagy::VARS[:max_items]   = 100       # example
+
 # Responsive: On resize, the number of page links will adapt in real-time to the available window or container width
 # See https://ddnexus.github.io/pagy/extras/responsive
 # require 'pagy/extras/responsive'
+# Pagy::VARS[:breakpoints] = { 0 => [1,2,2,1], 350 => [2,3,3,2], 550 => [3,4,4,3] }    # example of width/size pairs
 
 
 # Pagy Variables
@@ -40,11 +47,6 @@
 # Pagy::VARS[:anchor]     = '#anchor'                       # example
 # Pagy::VARS[:link_extra] = 'data-remote="true"'            # example
 # Pagy::VARS[:item_path]  = 'activerecord.models.product'   # example
-
-# Extras Non Core Variables
-# See https://ddnexus.github.io/pagy/extras/responsive#breakpoints
-# Pagy::VARS[:breakpoints] = { 0 => [1,2,2,1], 350 => [2,3,3,2], 550 => [3,4,4,3] }    # example of width/size pairs
-
 
 # Pagy::Frontend::I18N Constant
 # See https://ddnexus.github.io/pagy/api/frontend#i18n
